@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/IG:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3\STM32_MPU6050lib /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\stm_lib /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\cmsis_boot /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\cmsis /IG:\Mechanical Engineering\Robotics /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects /IG:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3 /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\stm_lib\inc">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="1604521c12b">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="G:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3\STM32_MPU6050lib\MPU6050.c" lastModified="1604599cbf9">
+         <include file="G:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3\STM32_MPU6050lib\MPU6050.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_i2c.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1604521c602">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="1604521bd67">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1604521beea">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="1604521bed8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="1604521be86">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="1604521c1c9">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\stdio\printf.c" lastModified="16045379ccf">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1604521beb8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_i2c.h" lastModified="1604521bca4">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="1604521d93a">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="1604521bda3">
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1604521c5e1">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="1604521bcca">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_i2c.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1604521bd97">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="G:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3\STM32_MPU6050lib\MPU6050.h" lastModified="160459836c3">
+         <include file="G:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3\STM32_MPU6050lib\HAL_MPU6050.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_i2c.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="1604521d8fa">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1604521bd02">
+      </source>
+      <source file="G:\Mechanical Engineering\Robotics\STM32_ARM_Cortex_M3\STM32_MPU6050lib\HAL_MPU6050.h" lastModified="16045a03589">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\stm_lib /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\cmsis_boot /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\cmsis /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects /I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\I2Ctest\stm_lib\inc">
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="1604521bd67">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1604521beea">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="1604521bed8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="1604521be86">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1604521beb8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_i2c.h" lastModified="1604521bca4">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="1604521d93a">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="1604521bda3">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="1604521bcca">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_i2c.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1604521bd97">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="1604521d8fa">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1604521bd02">
+      </source>
+   </includePath>
+</dependencies>

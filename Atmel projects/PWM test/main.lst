@@ -1,0 +1,214 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	PWM_INIT
+  18               	PWM_INIT:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0000 0197      		sbiw r24,1
+  26 0002 01F4      		brne .L4
+  27               	.LM3:
+  28 0004 86E0      		ldi r24,lo8(6)
+  29               	.LVL1:
+  30 0006 87BB      		out 55-32,r24
+  31               	.LM4:
+  32 0008 8FB5      		in r24,79-32
+  33 000a 8268      		ori r24,lo8(-126)
+  34 000c 8FBD      		out 79-32,r24
+  35               	.LM5:
+  36 000e 8EB5      		in r24,78-32
+  37 0010 8B61      		ori r24,lo8(27)
+  38 0012 8EBD      		out 78-32,r24
+  39               	.LM6:
+  40 0014 8FEF      		ldi r24,lo8(255)
+  41 0016 90E0      		ldi r25,hi8(255)
+  42 0018 97BD      		out (70)+1-32,r25
+  43 001a 86BD      		out 70-32,r24
+  44               	.LVL2:
+  45               	.L4:
+  46 001c 0895      		ret
+  47               	.LFE2:
+  49               	.global	PWM_WRITE
+  51               	PWM_WRITE:
+  52               	.LFB3:
+  53               	.LM7:
+  54               	.LVL3:
+  55               	/* prologue: function */
+  56               	/* frame size = 0 */
+  57               	.LM8:
+  58 001e 6136      		cpi r22,lo8(97)
+  59 0020 01F0      		breq .L6
+  60 0022 6134      		cpi r22,lo8(65)
+  61 0024 01F4      		brne .L7
+  62               	.L6:
+  63               	.LM9:
+  64 0026 0197      		sbiw r24,1
+  65 0028 01F4      		brne .L10
+  66 002a 5BBD      		out (74)+1-32,r21
+  67 002c 4ABD      		out 74-32,r20
+  68               	.LVL4:
+  69 002e 0895      		ret
+  70               	.LVL5:
+  71               	.L7:
+  72               	.LM10:
+  73 0030 6236      		cpi r22,lo8(98)
+  74 0032 01F0      		breq .L9
+  75 0034 6234      		cpi r22,lo8(66)
+  76 0036 01F4      		brne .L10
+  77               	.L9:
+  78               	.LM11:
+  79 0038 0197      		sbiw r24,1
+  80 003a 01F4      		brne .L10
+  81 003c 59BD      		out (72)+1-32,r21
+  82 003e 48BD      		out 72-32,r20
+  83               	.LVL6:
+  84               	.L10:
+  85 0040 0895      		ret
+  86               	.LFE3:
+  88               	.global	main
+  90               	main:
+  91               	.LFB8:
+  92               	.LM12:
+  93 0042 0F93      		push r16
+  94 0044 1F93      		push r17
+  95 0046 CF93      		push r28
+  96 0048 DF93      		push r29
+  97               	/* prologue: function */
+  98               	/* frame size = 0 */
+  99               	.LM13:
+ 100 004a 81E0      		ldi r24,lo8(1)
+ 101 004c 90E0      		ldi r25,hi8(1)
+ 102 004e 00D0      		rcall PWM_INIT
+ 103 0050 C0E0      		ldi r28,lo8(0)
+ 104 0052 D0E0      		ldi r29,hi8(0)
+ 105               	.LVL7:
+ 106               	.LBB20:
+ 107               	.LBB21:
+ 108               	.LBB22:
+ 109               	.LBB23:
+ 110               	.LBB24:
+ 111               	.LM14:
+ 112 0054 00E9      		ldi r16,lo8(400)
+ 113 0056 11E0      		ldi r17,hi8(400)
+ 114 0058 00C0      		rjmp .L21
+ 115               	.LVL8:
+ 116               	.L14:
+ 117               	.LBE24:
+ 118               	.LBE23:
+ 119               	.LBE22:
+ 120               	.LBE21:
+ 121               	.LM15:
+ 122 005a 81E0      		ldi r24,lo8(1)
+ 123 005c 90E0      		ldi r25,hi8(1)
+ 124 005e 61E4      		ldi r22,lo8(65)
+ 125 0060 AE01      		movw r20,r28
+ 126 0062 00D0      		rcall PWM_WRITE
+ 127               	.LVL9:
+ 128 0064 84EF      		ldi r24,lo8(500)
+ 129 0066 91E0      		ldi r25,hi8(500)
+ 130               	.LVL10:
+ 131               	.L13:
+ 132               	.LBB28:
+ 133               	.LBB27:
+ 134               	.LBB26:
+ 135               	.LBB25:
+ 136               	.LM16:
+ 137 0068 F801      		movw r30,r16
+ 138               	.LVL11:
+ 139               	/* #APP */
+ 140               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 141 006a 3197      		1: sbiw r30,1
+ 142 006c 01F4      		brne 1b
+ 143               	 ;  0 "" 2
+ 144               	/* #NOAPP */
+ 145               	.LBE25:
+ 146               	.LBE26:
+ 147               	.LM17:
+ 148 006e 0197      		sbiw r24,1
+ 149               	.LM18:
+ 150 0070 01F4      		brne .L13
+ 151               	.LBE27:
+ 152               	.LBE28:
+ 153               	.LM19:
+ 154 0072 2196      		adiw r28,1
+ 155               	.LVL12:
+ 156               	.L21:
+ 157 0074 81E0      		ldi r24,hi8(301)
+ 158 0076 CD32      		cpi r28,lo8(301)
+ 159 0078 D807      		cpc r29,r24
+ 160               	.LVL13:
+ 161 007a 04F0      		brlt .L14
+ 162 007c CCE2      		ldi r28,lo8(300)
+ 163 007e D1E0      		ldi r29,hi8(300)
+ 164               	.LVL14:
+ 165               	.L16:
+ 166               	.LBE20:
+ 167               	.LBB29:
+ 168               	.LM20:
+ 169 0080 81E0      		ldi r24,lo8(1)
+ 170 0082 90E0      		ldi r25,hi8(1)
+ 171 0084 61E4      		ldi r22,lo8(65)
+ 172 0086 AE01      		movw r20,r28
+ 173 0088 00D0      		rcall PWM_WRITE
+ 174               	.LVL15:
+ 175 008a 84EF      		ldi r24,lo8(500)
+ 176 008c 91E0      		ldi r25,hi8(500)
+ 177               	.LVL16:
+ 178               	.L15:
+ 179               	.LBB30:
+ 180               	.LBB31:
+ 181               	.LBB32:
+ 182               	.LBB33:
+ 183               	.LM21:
+ 184 008e F801      		movw r30,r16
+ 185               	.LVL17:
+ 186               	/* #APP */
+ 187               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 188 0090 3197      		1: sbiw r30,1
+ 189 0092 01F4      		brne 1b
+ 190               	 ;  0 "" 2
+ 191               	/* #NOAPP */
+ 192               	.LBE33:
+ 193               	.LBE32:
+ 194               	.LM22:
+ 195 0094 0197      		sbiw r24,1
+ 196               	.LM23:
+ 197 0096 01F4      		brne .L15
+ 198               	.LBE31:
+ 199               	.LBE30:
+ 200               	.LM24:
+ 201 0098 2197      		sbiw r28,1
+ 202 009a 8FEF      		ldi r24,hi8(-1)
+ 203 009c CF3F      		cpi r28,lo8(-1)
+ 204 009e D807      		cpc r29,r24
+ 205               	.LVL18:
+ 206 00a0 01F4      		brne .L16
+ 207 00a2 C0E0      		ldi r28,lo8(0)
+ 208 00a4 D0E0      		ldi r29,hi8(0)
+ 209               	.LVL19:
+ 210 00a6 00C0      		rjmp .L21
+ 211               	.LBE29:
+ 212               	.LFE8:
+ 254               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:2      *ABS*:0000003f __SREG__
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:3      *ABS*:0000003e __SP_H__
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:4      *ABS*:0000003d __SP_L__
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:5      *ABS*:00000034 __CCP__
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:18     .text:00000000 PWM_INIT
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:51     .text:0000001e PWM_WRITE
+C:\Users\HP\AppData\Local\Temp/ccacSGrF.s:90     .text:00000042 main
+
+NO UNDEFINED SYMBOLS

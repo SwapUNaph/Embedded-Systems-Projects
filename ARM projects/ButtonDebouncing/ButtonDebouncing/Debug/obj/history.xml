@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\ButtonPress -I..\..\..\..\..\Users\HP\Documents -I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\ButtonDebouncing -I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\ButtonDebouncing\cmsis_boot -I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects -I..\..\..\..\..\Users\HP\Documents\STM32_uC_projects\ButtonDebouncing\cmsis">
+      <target file="startup_stm32f10x_md.o" lastModified="15e58728c73">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="15e583c5040"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="15e58728c0d">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15e583c506f"/>
+      </target>
+      <target file="main.o" lastModified="15e58728ce8">
+         <source file="..\..\..\main.c" lastModified="15e587287b1"/>
+      </target>
+   </processor>
+</history>

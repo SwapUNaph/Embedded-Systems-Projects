@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=ButtonDebouncing.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ButtonDebouncing -TC:\CooCox\CoIDE\configuration\ProgramData\ButtonDebouncing/arm-gcc-link.ld -g">
+      <target file="ButtonDebouncing.elf" lastModified="15e58728f0b">
+         <source file="..\obj\system_stm32f10x.o" lastModified="15e58728c0d"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="15e58728c73"/>
+         <source file="..\obj\main.o" lastModified="15e58728ce8"/>
+      </target>
+   </processor>
+</history>

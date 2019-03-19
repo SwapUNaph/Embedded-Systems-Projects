@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=I2Ctest.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\I2Ctest -TC:\CooCox\CoIDE\configuration\ProgramData\I2Ctest/arm-gcc-link.ld -g">
+      <target file="I2Ctest.elf" lastModified="1604a3bb288">
+         <source file="..\obj\system_stm32f10x.o" lastModified="1604a3b7f6f"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1604a3b857a"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1604a3b8bc1"/>
+         <source file="..\obj\main.o" lastModified="1604a3b920a"/>
+         <source file="..\obj\printf.o" lastModified="1604a3b97c7"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1604a3b9cf7"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="1604a3ba26b"/>
+         <source file="..\obj\MPU6050.o" lastModified="1604a3ba78b"/>
+         <source file="..\obj\stm32f10x_i2c.o" lastModified="1604a3bacac"/>
+      </target>
+   </processor>
+</history>
