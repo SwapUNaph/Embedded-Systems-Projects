@@ -1,6 +1,6 @@
 # Atmel projects
 ## MyLibraries
-The folder consists of some libraries that I have created for implementing the I2C, ADC, USART, PWM and SPI peripherals of an Atmega8 microcintroller.
+The folder consists of some libraries that I have created for implementing the I2C, ADC, USART, PWM and SPI peripherals of an Atmega8 microcontroller.
 
 ## Test examples
 ADC test, LCD test, PWM test and UART rx/tx test are testing example codes for the MyLibraries implementations.
